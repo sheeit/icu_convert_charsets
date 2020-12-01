@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 	if (U_FAILURE(uerrc))
 		exit(EXIT_FAILURE);
 
-	printf("Opened converters:\n"
+	fprintf(stderr, "Opened converters:\n"
 			"\t-> To   ("  TO_CHARSET "):  %p\n"
 			"\t-> From (" FROM_CHARSET "): %p\n",
 			(void *) to_cnv,
